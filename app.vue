@@ -20,7 +20,7 @@ async function getData() {
 }
 
 const scrollEl = ref<HTMLElement | null>(null);
-useInfiniteScroll(scrollEl, async () => getData());
+useInfiniteScroll(scrollEl, async () => {});
 
 onMounted(() => getData());
 </script>
